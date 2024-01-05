@@ -1,0 +1,107 @@
+head { 
+      box-sizing: border-box;
+     }
+
+ /* ini Style headernya */
+       header {
+           background-image:url("1.png");
+           background-repeat:no-repeat;
+           background-position:center;
+           background-size:cover;
+            padding:50px;
+       }
+body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+ nav {
+	background-color:#000000; 
+	height:50px; 
+	line-height:50px; 
+	position:relative;
+	width:1375px;
+	margin:auto;
+	margin-top:-10px;
+      }
+
+nav ul {
+	list-style:none;
+        }
+nav ul li a {
+	float:left; 
+	width:150px; 
+	display:block; 
+	text-align:center; 
+	color:#FFF; 
+	text-decoration:none; 
+	text-transform:uppercase;
+}
+
+nav ul li a:hover {
+	background-color:#ffcbd5; 
+	display:block;
+                  }
+
+nav ul li:hover ul {
+	display:block;
+}
+nav ul ul {
+	display:none; 
+	list-style:none; 
+	position:absolute; 
+	background-color:#ffa09a;
+	left:300px; 
+	top:50px; 
+	width:190px;
+      }
+
+nav ul ul li a {
+	float:none; 
+	display:block; 
+	padding-left:30px; 
+	text-align:left; 
+	width:160px;
+}
+
+nav ul ul li a:hover {
+	color:#000000;
+        }
+       
+        
+        nav a
+        {
+            color: white;
+        }
+ 
+        article {
+            float: left;
+            padding: 20px;
+            width:100%;
+            background-color: #ffffff;
+            height: 300px;
+            /* hanya untuk contoh saja */
+        }
+ 
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+ 
+        /* Style the footer */
+        footer {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+ 
+        /* Responsive layout - buat 5 kolom/kotak */
+        @media (max-width: 200px) {
+ 
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
